@@ -1,0 +1,101 @@
+
+
+
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/header";
+@import "partials/footer";
+
+
+
+p { font-family: 'Playfair Display', serif;}
+p { color: $color-secundario;}
+
+
+* {margin: 0;
+padding: 0;}
+
+
+
+.logo {
+
+  width: 300px;
+  height: 90px;
+
+}
+
+.logo-2 {
+
+  width: 300px;
+  height: 90px;
+
+}
+
+
+.container {display:flex;
+  
+  gap: 30px 30px;  
+  
+}
+
+.footer { 
+  
+  .title-2 { display: flex;
+  
+  align-items: center;
+
+  justify-content: center;
+
+ font-style: italic;
+
+ font-size: small;
+
+ margin-top: 10%;
+
+ color: $color-principal;
+ 
+}
+
+.pages { display: flex;
+
+  align-items: center;
+  
+  justify-content: center;
+  
+  gap: 10px 10px;}
+  
+  .form {
+
+    margin-top: 5%;
+  }
+
+}
+
+
+.btn btn-outline-secondary { @extend .btn;}
+
+.maps {display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+}
+
+@mixin position-flex ($justify , $align) {display: flex;
+justify-content: $justify;
+align-items: $align;}
+
+.locales { .card-text { color: $color-principal;}
+
+.card { @media screen {max-width: 425px;
+  
+}}
+
+
+
+
+
+
+}
+
