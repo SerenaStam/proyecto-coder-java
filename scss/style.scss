@@ -31,12 +31,13 @@ padding: 0;}
 
 }
 
+.main {
 
-.container {display:flex;
-  
-  gap: 30px 30px;  
-  
-}
+   .container {display:flex; gap: 30px 30px;  }
+   
+  }
+
+
 
 .footer { 
   
@@ -53,6 +54,7 @@ padding: 0;}
  margin-top: 10%;
 
  color: $color-principal;
+ 
  
 }
 
@@ -74,28 +76,19 @@ padding: 0;}
 
 .btn btn-outline-secondary { @extend .btn;}
 
-.maps {display: flex;
-
-  justify-content: center;
-
-  gap: 20px;
-
-}
 
 @mixin position-flex ($justify , $align) {display: flex;
 justify-content: $justify;
 align-items: $align;}
 
-.locales { .card-text { color: $color-principal;}
+.locales { display: grid;
+  .card-text { color: $color-principal;}
+  .maps {display: flex;
 
-.card { @media screen {max-width: 425px;
+    justify-content: center;
   
-}}
-
-
-
-
-
-
+    gap: 20px;
+  
+  }
 }
 
