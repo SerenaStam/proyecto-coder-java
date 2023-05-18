@@ -25,14 +25,6 @@
   gap: 10px 10px;
 }
 
-p {
-  font-family: "Playfair Display", serif;
-}
-
-p {
-  color: red;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -48,43 +40,109 @@ p {
   height: 90px;
 }
 
-.container {
+.main .container {
   display: flex;
   gap: 30px 30px;
 }
 
+.main-2 .card-2:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-3:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-4:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-5:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-6:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-7:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-8:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-9:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+.main-2 .card-10:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+
+.footer {
+  background-color: #d2e1a7;
+}
 .footer .title-2 {
   display: flex;
-  align-items: center;
+  align-items: first baseline;
   justify-content: center;
   font-style: italic;
   font-size: small;
-  margin-top: 10%;
-  color: rgb(231, 201, 119);
+  margin-top: 0%;
+  color: black;
+}
+.footer .form {
+  display: grid;
+  display: flex;
+  grid-template-areas: "form" "form" "form";
+  background-color: #d2e1a7;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 5%;
+}
+.footer .form form {
+  grid-area: form;
 }
 .footer .pages {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px 10px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.footer .list {
+  list-style: none;
+}
+.footer .help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  font-style: italic;
+  color: white;
 }
 .footer .form {
   margin-top: 5%;
 }
-
-.maps {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.footer .line {
+  height: 1px;
+  border-color: black;
 }
 
+.locales {
+  display: grid;
+}
 .locales .card-text {
   color: rgb(231, 201, 119);
 }
-@media screen {
-  .locales .card {
-    max-width: 425px;
-  }
+.locales .maps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

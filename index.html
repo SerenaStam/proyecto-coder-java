@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Apres Indumentaria / Inicio / Hombre / Mujer </title>
+    <title> Apres Indumentaria / Online Store </title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,15 +18,23 @@
 <!-- link bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- link animaciones -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-<meta name="description" content="Indumentaria canchera, diseños exclusivos y mucho más. Conocé la Nueva Temporada, Disponible en Todos Nuestros Locales & e-Store.">
+<!-- SEO -->
 
-<meta name="keywords" content="Indumentaria, Hombre, Mujer, Temporada Invierno, Camperas">
+<meta name="description" content="Indumentaria sin genero, diseños exclusivos y mucho más. Conocé la Nueva Temporada, Disponible en Todos Nuestros Locales & e-Store.">
+
+<meta name="keywords" content="Indumentaria, Diseños exclusivos, Mujer, Temporada Invierno, Diseño, Urbano, Top , Jeans, Camperas">
 
 <meta property="og:title" content=" Indumentaria / Diseños Exclusivos">
+<meta property="og:description" content= " Indumentaria sin genero, diseños exclusivos y mucho más.">
+
+
+<meta name="author" content="Serena Stambulsky" >
+
 </head>
 
 
@@ -45,7 +53,7 @@
           <div class="collapse navbar-collapse justify-content-end"id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -75,14 +83,12 @@
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="https://i.pinimg.com/originals/4e/15/eb/4e15eb409f105d3c3961fbe68bc3c37f.jpg" class="d-block w-100" alt="carrusel foto 1">
+                    <img src="img/WhatsApp Image 2023-05-17 at 10.28.10.jpeg" class="d-block w-100" alt="carrusel foto 1">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://i.pinimg.com/564x/4d/73/29/4d73294bcda3352c9d286c66e6a03926.jpg" class="d-block w-100" alt="carrusel foto 2">
+                    <img src="img/WhatsApp Image 2023-05-17 at 10.27.06.jpeg" class="d-block w-100" alt="carrusel foto 2">
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://i.pinimg.com/564x/b6/bf/61/b6bf61e0209d258c0303e15761b22f40.jpg" class="d-block w-100" alt="carrusel foto 3">
-                  </div>
+                  
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,17 +112,17 @@
             </div>
 
             <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                <img src="https://i.pinimg.com/564x/3c/db/e8/3cdbe8aca09e59c99477a391ffad2302.jpg" class="card-img-top" alt="foto seccion mujer">
+                <img src="https://i.pinimg.com/564x/57/fd/e0/57fde07ff02b37e56d10af48d62a04cc.jpg" class="card-img-top" alt="foto seccion mujer">
                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                  <h5 class="card-title fst-italic">Mujer</h5>
+                  <h5 class="card-title fst-italic"> Coleccion 23</h5>
                   <button type="button" class="btn btn-outline-secondary">Comprar</button>
                 </div>
               </div>
 
               <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                <img src="https://i.pinimg.com/564x/31/42/e8/3142e83495a39e5195a18e6980d66525.jpg" class="card-img-top" alt="foto seccion hombre">
+                <img src="https://i.pinimg.com/564x/9b/30/8c/9b308cf7b0b9d1434cf835a223218a2b.jpg" class="card-img-top" alt="foto seccion hombre">
                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                  <h5 class="card-title fst-italic"  >Hombre</h5>
+                  <h5 class="card-title fst-italic"  > Prendas Unicas </h5>
                   <button type="button" class="btn btn-outline-secondary">Comprar</button>
                 </div>
               </div>
@@ -127,10 +133,10 @@
         <section class="carrusel-2">
             <!-- Carrusel de imagenes con nombre de la prenda y precios -->
                
-            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4 mb-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4 mb-4" data-aos="flip-left">
               <div class="col">
                 <div class="card">
-                  <img class= "campera" src="https://i.pinimg.com/236x/f7/c4/93/f7c493054e8c697b4f611558b210b4fe.jpg" class="card-img-top" alt="foto campera">
+                  <img class= "campera" src="https://i.pinimg.com/564x/d8/c4/3e/d8c43e1db1aca7b4579a41b62b3b81b6.jpg" class="card-img-top" alt="foto campera">
                   <div class="card-body">
                     <h5 class="card-title d-flex justify-content-center fst-italic">Campera Love</h5>
                     <p class="card-text d-flex justify-content-center"> $30.000</p>
@@ -139,7 +145,7 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="https://i.pinimg.com/236x/10/be/b1/10beb1125cc62c6ff55752217b7d9b23.jpg" class="card-img-top" alt="foto blazer">
+                  <img src="https://i.pinimg.com/564x/5d/c7/03/5dc7030119f49638fe964daf8e7528eb.jpg" class="card-img-top" alt="foto blazer">
                   <div class="card-body">
                     <h5 class="card-title d-flex justify-content-center fst-italic"> Blazer Luck</h5>
                     <p class="card-text d-flex justify-content-center"> $15.000</p> 
@@ -148,7 +154,7 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="https://i.pinimg.com/564x/a1/93/90/a19390ae3cbfb9614bf1a1d26ade6257.jpg" class="card-img-top" alt="foto blazer 2">
+                  <img src="https://i.pinimg.com/564x/07/f8/77/07f87722513c4d2b8fdc4021e6b1808b.jpg" class="card-img-top" alt="foto blazer 2">
                   <div class="card-body">
                     <h5 class="card-title d-flex justify-content-center fst-italic">Blazer Mia</h5>
                     <p class="card-text d-flex justify-content-center"> $20.000 </p>
@@ -170,25 +176,49 @@
     
 
     <footer class="footer">
+
+      
+  
+
+      <section class="form">  
+        <section class="form">  
+          <div> <section class="title-2">
+            <h2> Novedades - Suscribite </h2>
+           </section>
+          <form class="form justify-content-center align-items-center ">
+          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="Email">
+          <label for="floatingInputValue"></label>
+        </form></div>
+         
         
-      <section class="title-2">
-        <h2> Suscribite </h1>
       </section>
 
-        <form class="form-floating justify-content-center align-items-center shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-          <label for="floatingInputValue"></label>
-        </form>
+    </section>
+
+    <hr class="line"/>
+
+    <section class="help">
+      <h3> Ayuda </h3>
+
+    </section>
+
+  
 
         <section class="pages">
-          <a href="pages/locales.html">Locales</a>
-          <a href="pages/politicas.html">Politicas de privacidad</a>
-          <a href="pages/preguntas.html">Preguntas Frecuentes</a>
+          <ul class="list">
+            
+            <li> <a href="pages/locales.html">Locales</a> </li>
+            <li>  <a href="pages/politicas.html">Politicas de privacidad</a></li>
+            <li> <a href="pages/preguntas.html">Preguntas Frecuentes</a></li>
+        
+        </ul>
+         
 
         </section>
                 
         <section class="text-center">
 
+       
           <i class="bi bi-instagram fs-5"></i>
           <i class="bi bi-facebook fs-5"></i>
           <i class="bi bi-whatsapp fs-5"></i>
@@ -197,6 +227,12 @@
         
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
 

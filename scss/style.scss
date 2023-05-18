@@ -8,8 +8,8 @@
 
 
 
-p { font-family: 'Playfair Display', serif;}
-p { color: $color-secundario;}
+
+
 
 
 * {margin: 0;
@@ -33,45 +33,113 @@ padding: 0;}
 
 .main {
 
-   .container {display:flex; gap: 30px 30px;  }
-   
+   .container {display:flex; gap: 30px 30px;}
+  }
+
+.main-2 { .card-2:hover { transform: scale(1.1);
+  transition: all 2s;}
+  
+  .card-3:hover { transform: scale(1.1);
+    transition: all 2s;}
+  
+    .card-4:hover { transform: scale(1.1);
+      transition: all 2s;}
+  
+      .card-5:hover { transform: scale(1.1);
+        transition: all 2s;}
+  
+        .card-6:hover { transform: scale(1.1);
+          transition: all 2s;}
+  
+          .card-7:hover { transform: scale(1.1);
+            transition: all 2s;}
+  
+            .card-8:hover { transform: scale(1.1);
+              transition: all 2s;}
+  
+              .card-9:hover { transform: scale(1.1);
+                transition: all 2s;}
+  
+                .card-10:hover { transform: scale(1.1);
+                  transition: all 2s;}
+ }
+
+
+.footer { background-color: #d2e1a7;
+  
+  
+  .title-2 { display: flex;
+  
+  align-items:first baseline;
+
+  justify-content: center;
+
+ font-style:italic;
+
+ font-size: small;
+
+ margin-top: 0%;
+
+
+ color: $color-terciario;
+
+}
+
+.form {
+  display: grid;
+  display: flex;
+  grid-template-areas: "form" "form" "form";
+  form {grid-area: form;}
+  background-color: #d2e1a7;
+  justify-content:center;
+  align-items: first baseline;
+  gap: 5%;
+
   }
 
 
 
-.footer { 
-  
-  .title-2 { display: flex;
-  
-  align-items: center;
-
-  justify-content: center;
-
- font-style: italic;
-
- font-size: small;
-
- margin-top: 10%;
-
- color: $color-principal;
- 
- 
-}
 
 .pages { display: flex;
 
-  align-items: center;
+  align-items:center;
   
-  justify-content: center;
+  justify-content:center;
   
-  gap: 10px 10px;}
+  gap: 10px 10px;
+
+  margin-top: 2%;
+
+  margin-bottom: 5%;
+}
+
+.list { list-style: none;
+  
+}
+
+.help { display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 5%;
+font-style: italic;
+color: white;}
+
+
+
   
   .form {
 
     margin-top: 5%;
   }
 
+.line {  height: 1px;
+  border-color: $color-terciario;}
+
+
+
 }
+
+
 
 
 .btn btn-outline-secondary { @extend .btn;}
@@ -88,7 +156,10 @@ align-items: $align;}
     justify-content: center;
   
     gap: 20px;
-  
-  }
+
 }
+
+
+}
+
 
