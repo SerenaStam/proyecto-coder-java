@@ -66,3 +66,26 @@ const productos =
         cantidad:1
     }
 ];
+
+const productosJSON = JSON.stringify(productos);
+
+console.log(productosJSON);
+
+
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la solicitud: ' + response.status);
+        }
+        return response.json(); 
+    })
+    .then(productosObtenidos => {
+        
+        const todosLosProductos = [...productosObtenidos, ...JSON.parse(productosJSON)];
+        
+        console.log(todosLosProductos); 
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });

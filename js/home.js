@@ -1,3 +1,5 @@
+
+
 const pintarProductos = (data) => {
     const contenedor = document.getElementById("producto-contenedor");
 
@@ -17,3 +19,4 @@ const pintarProductos = (data) => {
       contenedor.appendChild(div);
     });
   };
+

@@ -55,6 +55,8 @@ const pintarCarrito = (carrito) => {
       <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
     `
     contenedor.appendChild(div)
+
+    
   });
 }
 
@@ -105,7 +107,40 @@ const limpiarCarrito = () => {
     pintarCarrito(carrito);
     actualizarTotalesCarrito(carrito);
     guardarCarritoStorage(carrito);
+
+    Swal.fire({
+      title: 'Usted esta vaciando su carrito',
+      text: 'Desea continuar?',
+      icon: 'warning',
+      confirmButtonText: 'Cool'
+    })
   };
 
 
-  
+// Función que realiza una solicitud fetch y devuelve una promesa
+function fetchData(url) {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Error en la solicitud: ' + response.status);
+        }
+        return response.json();
+      })
+      .then(data => {
+        resolve(data); // Resuelve la promesa con los datos
+      })
+      .catch(error => {
+        reject(error); // Rechaza la promesa con el error
+      });
+  });
+}
+
+// Uso de la función fetchData con promesas
+fetchData('https://jsonplaceholder.typicode.com/posts/1')
+  .then(data => {
+    console.log(data); // Trabaja con los datos obtenidos
+  })
+  .catch(error => {
+    console.error('Error:', error); // Maneja los errores
+  });
